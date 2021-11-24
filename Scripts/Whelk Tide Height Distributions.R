@@ -104,7 +104,7 @@ dev.off()
 
 
 #### Plot - Presence of Native Whelks in the Presence of Non-Native Whelks ####
-png("Plots/Figure3c.png", width = 2400, height = 1600, res = 300)
+png("Plots/Presence.png", width = 2400, height = 1600, res = 300)
 plot(ggpredict(binomial2, c("TH","M.PA"), interactive = TRUE, se = TRUE, facet = TRUE)) + 
   geom_smooth(method = "glm", 
               method.args = list(family = "binomial"), 
