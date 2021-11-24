@@ -110,7 +110,7 @@ counties <- CA[CA$NAME == "Los Angeles" | CA$NAME == "San Bernardino" | CA$NAME 
 Mex <- world[world$name_long == "Mexico",]
 
 
-png(paste('Plots/Map.png'), width = 2400, height = 2400)
+png(paste('Plots/Whelk Map.png'), width = 2400, height = 2400)
 ggplot() +
   geom_sf(data = counties, color="black", fill = "darkolivegreen3", size=0.25) +
   geom_sf(data = Mex, color = "black", fill = "gray", size=0.25) +
